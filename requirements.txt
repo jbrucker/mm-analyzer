@@ -1,0 +1,7 @@
+# Installing entire Jupyter package is probably overkill
+jupyter
+numpy
+pandas
+matplotlib
+# for statistical functions on numpy arrays and Pandas df
+scikit-learn
