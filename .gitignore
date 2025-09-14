@@ -1,0 +1,86 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+env/
+venv/
+.venv/
+# Wiki is a separate repo
+wiki/
+
+# Project specific junk
+response.txt
+
+# environment variables
+.env
+.env*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python
+# Node dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# testing
+coverage/
+.mypy_cache/
+.pytest_cache/
+*.sqlite
+*.sqlite3
+
+# next.js
+.next/
+out/
+
+# Vite cache
+.vite/
+
+# production
+build/
+
+# build output
+dist/
+
+
+# metadata / cache
+package-lock.json
+yarn.lock
+__pycache__/
+.docker/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+
+# Logs, including npm-debug.log*, etc.
+logs
+*.log
+*.log*
+
+# Misc
+.DS_Store
+Thumbs.db
+dist-ssr
+coverage
+*.local
+*.pem
+*.tmp
+
+# Editor files
+*.swp
+*.back
+*.vscode
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
