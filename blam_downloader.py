@@ -53,7 +53,7 @@ def blam_download(fund_code: str, start_date: str | date, end_date: str | date):
         response = urllib.request.urlopen(url)
         content = response.read().decode("utf-8")
         response.close()
-        # save response to a file
+        # save response to a file fpr debugging
         with open("response.txt", "w", encoding="utf-8") as output_file:
             output_file.write(content)
     except urllib.error.HTTPError as ex:
@@ -70,7 +70,7 @@ def blam_download(fund_code: str, start_date: str | date, end_date: str | date):
         data = match.group(1)
         return data
     else:
-        print(f"Pattern {pattern} not found")
+        print(f"Pattern {pattern} not found in response. See response.txt.")
         return ""
 
 
